@@ -1,4 +1,4 @@
 # yaroslav-dev.github.io
 
-Brights test task:
-https://yaroslav-dev.github.io/brights/
+# Brights test task:
+# https://yaroslav-dev.github.io/brights/
