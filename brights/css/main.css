@@ -33,6 +33,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
+	user-select: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -186,6 +187,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
+	user-select: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
