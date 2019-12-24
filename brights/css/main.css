@@ -1,0 +1,287 @@
+body {
+	background-color: #17B0AE;
+	display: flex;
+	background-image: radial-gradient(closest-side, #3dcec0 1%, #19b3b0 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Left side */
+
+.left-side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	perspective: 200px;
+	z-index: 3;
+}
+
+.back {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	transform: rotateY(15deg) rotateX(-10deg);
+	cursor: pointer;
+	transition: all .1s ease-in;
+	z-index: 3;
+}
+
+.back:hover {
+	background-color: #fff;
+	color: #19b3b0;
+}
+
+.left-arrow {
+	width: 5px;
+	height: 5px;
+	z-index: 3;
+	border-left: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	transform: rotate(45deg);
+	transition: all .1s ease-in;
+}
+
+.back:hover .left-arrow{
+	border-left: 3px solid #19b3b0;
+	border-bottom: 3px solid #19b3b0;
+}
+
+/* Center block with characters*/
+
+.char-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	transition: all .3s;
+}
+
+.circle {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: 3px solid #98e2de;
+	border-radius: 150px;
+	box-sizing: border-box;
+	margin: 0 30px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.img {
+	position: relative;
+	display: inline-block;
+	height: 140px;
+	bottom: -5px;
+	transition: all .3s cubic-bezier(.69,.13,.15,1.83);
+}
+
+.circle:hover .img {
+	height: 160px;
+	bottom: 18px;
+}
+
+.circle:hover {
+	border: 5px solid #fff;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.30);
+}
+
+.forward-add-active {
+	animation: forwardAdd .15s linear;
+}
+.forward-remove-active {
+	animation: forwardRemove .15s linear;
+}
+.back-add-active {
+	animation: backAdd .15s linear;
+}
+.back-remove-active {
+	animation: backRemove .15s linear;
+}
+
+@keyframes forwardAdd {
+	0% {
+		transform: translateX(-800px) scale(2);
+		opacity: 0;
+		margin-right: -175px;
+	}
+	100% {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+		margin-right: 30px;
+	}
+}
+@keyframes forwardRemove {
+	0% {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+		margin-right: 30px;
+	}
+	100% {
+		transform: translateX(600px) scale(2);
+		opacity: 0;
+		margin-right: -175px;
+	}
+}
+
+
+@keyframes backAdd {
+	0% {
+		transform: translateX(800px) scale(2);
+		opacity: 0;
+		margin-left: -175px;
+	}
+	100% {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+		margin-left: 30px;
+	}
+}
+@keyframes backRemove {
+	0% {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+		margin-left: 30px;
+	}
+	100% {
+		transform: translateX(-600px) scale(2);
+		opacity: 0;
+		margin-left: -175px;
+	}
+}
+
+/* Right side */
+
+.right-side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	perspective: 200px;
+	z-index: 3;
+}
+
+.forward {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	transform: rotateY(-15deg) rotateX(-10deg);
+	cursor: pointer;
+	transition: all .1s ease-in;
+	z-index: 3;
+}
+
+.forward:hover {
+	background-color: #fff;
+	color: #19b3b0;
+}
+
+.right-arrow {
+	width: 5px;
+	height: 5px;
+	z-index: 3;
+	border-left: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	transform: rotate(225deg);
+	transition: all .1s ease-in;
+}
+
+.forward:hover .right-arrow {
+	border-left: 3px solid #19b3b0;
+	border-bottom: 3px solid #19b3b0;
+}
+
+/* Warning */
+
+.mobile-warning {
+	align-self: center;
+	margin: 50vh auto;
+	font-size: 20px;
+	color: #fff;
+	display: none;
+}
+
+.dot1 {
+  animation-name: anim1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.dot2 {
+  animation-name: anim2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.dot3 {
+  animation-name: anim3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim1 {
+  from {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes anim2 {
+  from {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+@keyframes anim3 {
+  from {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+	.main {
+		display: none;
+	}
+	.mobile-warning {
+		display: block;
+	}
+}
