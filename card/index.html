@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <span class="super">superbank<span class="v-line"></span><span class="ultra">Ultrasuper Bank</span></span>
+        <form name="myForm" class="number">
+          <input id="cardNumber" type="text" placeholder="0000 0000 0000 0000" data-tab="0" data-length="19">
+          <input id="date" type="text" placeholder="MM/YY" data-tab="1" data-length="5">
+        </form>
+        <img class="master" src="img/mc_symbol_opt_73_1x.png" alt="mastercard">
+      </div>
+      <div class="flip-card-back">
+        <div class="stripe"></div>
+        <form name="myBackForm" class="back-number">
+          <input id="cvc" type="text" placeholder="***" data-tab="2" data-length="3">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/white_space.js"></script>
+  <script src="js/autoTab.min.js"></script>
+  <script>
+    
+    var autoTab;
+    (function() {
+      autoTab = new autoTab({
+        autoFocus: true, 
+        addStyle: false,
+        onComplete: function() {}
+      });				
+    })();
+      
+  </script>
+  <script src="js/flip.js"></script>
+</body>
+</html>
