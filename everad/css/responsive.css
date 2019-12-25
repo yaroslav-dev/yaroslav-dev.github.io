@@ -1,0 +1,226 @@
+@media screen and (max-width: 1300px) {
+  .arrow {
+    display: none;
+  }
+  .product-img.main {
+    left: 55px;
+    width: 140%;
+  }
+  .second-screen-item {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .fourth-screen-why {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .head-screen-header {
+    justify-content: space-around;
+  }
+  .head-promo-img {
+    display: none;
+  }
+  .feet {
+    display: none;
+  }
+  .head-screen-main {
+    justify-content: space-around;
+  }
+  .head-promo {
+    position: absolute;
+  }
+  .head-product-desc {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .head-product-desc-header {
+    margin-right: 3vw;
+  }
+  .product-img.main {
+    display: none;
+  }
+  .product-img.alter {
+    position: absolute;
+    display: block;
+    top: 250px;
+    left: 120px;
+    width: 100%;
+  }
+  .head-screen {
+    margin-bottom: 120px;
+  }
+  .second-screen-header {
+    margin-top: 30px;
+  }
+  .second-screen {
+    padding-bottom: 50px;
+  }
+  .third-screen {
+    padding-top: 30px;
+  }
+  
+  .screen::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .head-screen {
+    background-image: none;
+    padding-bottom: 20px;
+  }
+  .head-screen-header {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .logo-text {
+    font-size: 32px;
+  }
+  .features {
+    margin-top: 10px;
+  }
+  .head-product-desc {
+    display: block;
+  }
+  .product-img.alter {
+    display: none;
+  }
+  .second-screen-main {
+    transform: scale(0.9);
+    
+  }
+  .second-screen-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .second-screen-item-main {
+    display: block;
+    text-align: center;
+  }
+  .second-screen-item-text {
+    margin-left: 0;
+  }
+  .second-screen-item-svg-obj,
+  .second-screen-item-number {
+    display: none;
+  }
+  .fifth-screen-main {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+  }
+  .fifth-screen-main-glass {
+    transform: scale(0.8);
+    margin-right: 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .fifth-screen-main-glass img {
+    margin: 0 auto;
+  }
+  .fifth-screen-main-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 38px;
+  }
+  .head-screen-main {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .features-list {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .features-list-item {
+    justify-content: left;
+  }
+  .features-list-item:nth-child(2) .features-img {
+    margin-left: 8px;
+  }
+  .features-list-item:nth-child(1) .features-text {
+    padding-left: 10px;
+  }
+  .features-list-item:nth-child(2) .features-text {
+    padding-left: 15px;
+  }
+  .features-list-item:nth-child(3) .features-text {
+    padding-left: 10px;
+  }
+  .head-product-desc-header {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .head-product-desc-list {
+    margin-bottom: 30px;
+  }
+  .h-desc-item-text {
+    font-size: 18px;
+  }
+  .second-screen-main {
+    transform: scale(1);
+    display: block;
+  }
+  .second-screen-item {
+    width: 100%; 
+  }
+  .third-screen-main {
+    display: block;
+  }
+  .third-screen-main-item {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  .fourth-screen-main {
+    display: block;
+  }
+  .fourth-screen-main-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .fourth-screen-main-item {
+    margin-bottom: 100px
+  }
+  .fifth-screen-main-glass {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h2 {
+    font-size: 34px;
+  }
+  .head-product-desc-header {
+    font-size: 28px;
+  }
+  .head-product-desc-header span {
+    font-size: 28px;
+  }
+  .fifth-screen-main-glass {
+    transform: scale(0.4);
+    margin: -70px -20px; 
+  }
+  .fifth-screen-main-list {
+    display: block;
+    margin-left: 0;
+    transform: none;
+  }
+}
