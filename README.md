@@ -3,10 +3,10 @@
 Todo app with Vue.js and Vuetify
 https://yaroslav-dev.github.io/tododo/
 
-Brights test task (randomized slider):
+Randomized slider:
 https://yaroslav-dev.github.io/brights/
 
-Everad test task (landing page):
+Landing page:
 https://yaroslav-dev.github.io/everad/
 
 Credit card form:
