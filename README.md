@@ -1,6 +1,6 @@
 # yaroslav-dev.github.io
 
-Shopping list app with Vue, Vuetify and Firebase
+Shopping list app with Vue, Vuetify and Firebase:
 https://listify.pp.ua/
 
 Randomized slider:
