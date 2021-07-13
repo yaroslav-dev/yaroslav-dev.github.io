@@ -1,6 +1,6 @@
 # yaroslav-dev.github.io
 
-Shopping list PWA app with Vue, Vuetify and Firebase:
+Shopping list PWA with Vue, Vuetify and Firebase (check on mobile):
 https://listify.pp.ua/
 
 Randomized slider:
