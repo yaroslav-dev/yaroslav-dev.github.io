@@ -1,7 +1,7 @@
 # yaroslav-dev.github.io
 
 Shopping list PWA with Vue, Vuetify and Firebase (check on mobile):
-https://listify.pp.ua/
+https://listify-app.pp.ua/
 
 Randomized slider:
 https://yaroslav-dev.github.io/brights/
