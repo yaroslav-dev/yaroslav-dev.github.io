@@ -9,5 +9,5 @@ https://yaroslav-dev.github.io/brights/
 Landing page:
 https://yaroslav-dev.github.io/everad/
 
-Responsible table:
+Responsive table:
 https://yaroslav-dev.github.io/archi/
